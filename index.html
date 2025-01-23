@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant & Café Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <!-- Add logo here -->
+    <a href="index.html" class="nav__logo">
+      <img src=".//photos/logo.png" alt="Logo" class="nav__logo-img">
+    </a>
+    <ul class="nav__menu">
+      <li class="nav__menu-item"><a href="index.html">Home</a></li>
+      <li class="nav__menu-item"><a href="index.html#best-food">Food</a>
+        <ul class="nav__submenu">
+          <li class="nav__submenu-item"><a href="chicken.html">Chicken</a></li>
+          <li class="nav__submenu-item"><a href="beef.html">Beef</a></li>
+          <li class="nav__submenu-item"><a href="seafood.html">Seafood</a></li>
+        </ul>
+      </li>
+      <li class="nav__menu-item"><a href="index.html#best-drinks">Drinks</a>
+        <ul class="nav__submenu">
+          <li class="nav__submenu-item"><a href="index.html#coffee">Coffee</a></li>
+          <li class="nav__submenu-item"><a href="index.html#soft-drinks">Soft Drinks</a></li>
+          <li class="nav__submenu-item"><a href="index.html#juices">Juices</a></li>
+        </ul>
+      </li>
+      <li class="nav__menu-item"><a href="index.html#about">About Us</a></li>
+      <li class="nav__menu-item"><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <h1>Welcome to Our Restaurant & Café</h1>
+      <h1>Experience the best food and drinks in town.</h1>
+    </div>
+  </section>
+
+  <!-- Best Food Section -->
+  <section id="best-food" class="menu-section">
+    <div class="container">
+      <h2 class="section-title">Best Food</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box">
+            <h3 class="name">Fried Chicken</h3>
+            <button class="btn btn-primary quick-view" 
+                    data-name="Fried Chicken" 
+                    data-description="Crispy and flavorful fried chicken made with our special recipe." 
+                    data-price="120 L.E" 
+                    data-image="./photos/Fried_Chicken-removebg-preview.png">
+              Quick View
+            </button>
+            <div class="circle"></div>
+            <img class="product" src="./photos/Fried_Chicken-removebg-preview.png" alt="Fried Chicken">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <h3 class="name">Beef Steak</h3>
+            <button class="btn btn-primary quick-view" 
+                    data-name="Beef Steak" 
+                    data-description="Juicy grilled beef steak cooked to perfection." 
+                    data-price="300 L.E" 
+                    data-image=".//photos/Beef Steak.png">
+                    
+              Quick View
+            </button>
+            <div class="circle"></div>
+            <img class="product" src=".//photos/Beef Steak.png" alt="Beef Steak">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <h3 class="name">Sushi </h3>
+            <button class="btn btn-primary quick-view" 
+                    data-name="Seafood Platter" 
+                    data-description="A variety of fresh seafood served with dipping sauces." 
+                    data-price="$400 L.E" 
+                    data-image=".//photos/Sushi.png">
+              Quick View
+            </button>
+            <div class="circle"></div>
+            <img class="product" src=".//photos/Sushi.png" alt="Seafood Platter">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Drinks Section -->
+  <section id="best-drinks" class="menu-section">
+    <div class="container">
+      <h2 class="section-title">Best Drinks</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box">
+            <h3 class="name">Latte</h3>
+            <button class="btn btn-primary quick-view" 
+                    data-name="Latte" 
+                    data-description="Rich and creamy latte made with freshly brewed coffee." 
+                    data-price="80 L.E" 
+                    data-image="./photos/Latte.png">
+              Quick View
+            </button>
+            <div class="circle"></div>
+            <img class="product" src=".//photos/Latte.png" alt="Latte">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <h3 class="name">Soft Drink</h3>
+            <button class="btn btn-primary quick-view" 
+                    data-name="Soft Drink" 
+                    data-description="Refreshing fizzy drink available in multiple flavors." 
+                    data-price="60 L.E" 
+                    data-image=".//photos/Soft Drink.png">
+              Quick View
+            </button>
+            <div class="circle"></div>
+            <img class="product" src=".//photos/Soft Drink.png" alt="Soft Drink">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <h3 class="name">Fresh Juice</h3>
+            <button class="btn btn-primary quick-view" 
+                    data-name="Fresh Juice" 
+                    data-description="Freshly squeezed fruit juice packed with natural goodness." 
+                    data-price="80 L.E" 
+                    data-image=".//photos/Fresh Juice.png">
+              Quick View
+            </button>
+            <div class="circle"></div>
+            <img class="product" src=".//photos/Fresh Juice.png" alt="Fresh Juice">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="quickViewTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="quickViewImage" src="" alt="" class="img-fluid mb-3">
+          <p id="quickViewDescription"></p>
+          <p><strong>Price:</strong> <span id="quickViewPrice"></span></p> <!-- Add this line for price -->
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br>
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to <strong>Restaurant & Café</strong>, where we bring you the finest dining experience. Our passion for food and drinks is reflected in every dish we serve. We use only the freshest ingredients to create mouth-watering meals that will leave you craving for more.</p>
+      <p>Our team of expert chefs and baristas are dedicated to providing you with an unforgettable experience. Whether you're here for a quick coffee or a full-course meal, we guarantee you'll leave satisfied.</p>
+    </div>
+  </section>
+  <br><br>
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Reach out to us for reservations, inquiries, or just to say hello.</p>
+      <div class="contact-info">
+        <p><strong>Email:</strong> info@restaurant.com</p>
+        <p><strong>Phone:</strong> +20100006594</p>
+        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d362.99760985821104!2d30.96096874651916!3d30.05307114386745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1737568954189!5m2!1sen!2seg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://assets.codepen.io/7773162/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+      max: 15,
+      speed: 300,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      scale: 1.05,
+    });
+  </script>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const quickViewButtons = document.querySelectorAll('.quick-view');
+      const modal = new bootstrap.Modal(document.getElementById('quickViewModal'));
+      const modalTitle = document.getElementById('quickViewTitle');
+      const modalDescription = document.getElementById('quickViewDescription');
+      const modalImage = document.getElementById('quickViewImage');
+      const modalPrice = document.getElementById('quickViewPrice'); // Add this line
+
+      quickViewButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const name = button.getAttribute('data-name');
+          const description = button.getAttribute('data-description');
+          const price = button.getAttribute('data-price'); // Add this line
+          const image = button.getAttribute('data-image');
+
+          modalTitle.textContent = name;
+          modalDescription.textContent = description;
+          modalPrice.textContent = price; // Add this line
+          modalImage.src = image;
+
+          modal.show();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

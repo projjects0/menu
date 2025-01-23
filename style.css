@@ -1,0 +1,532 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000; /* Black background */
+  color: #000000; /* White text */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Navigation Styles */
+.nav {
+  background: #333;
+  width: 100%; /* Full width */
+  margin: 0 auto;
+  color: #f0f0f0;
+  border-radius: 15px;
+  padding: 10px 20px; /* Adjusted padding */
+  position: fixed; /* Fixed position */
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #0022ff, 0 0 30px #0022ff, 0 0 40px #0022ff; 
+
+}
+
+.nav a {
+  display: block;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.nav__menu {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center items */
+  flex-wrap: nowrap; /* Prevent wrapping to keep items in one line */
+  gap: 10px; /* Add spacing between menu items */
+}
+
+.nav__menu {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nav__menu-item {
+  margin: 0;
+  padding: 10px; /* Reduce padding for a more compact look */
+  position: relative;
+  font-size: 0.9rem; /* Reduce font size for smaller text */
+}
+
+.nav__menu-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav__submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  border-top: 2px solid #fff; /* White border between menu items and submenus */
+  border-radius: 10px;
+}
+
+.nav__submenu-item {
+  padding: 10px;
+  font-size: 0.9rem; /* Reduce font size for submenu items */
+}
+
+/* Hover effect on anchor tags */
+.nav__menu-item:hover > a {
+  border: 2px solid #fff; /* White border on hover */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Show submenu on hover */
+.nav__menu-item:hover .nav__submenu {
+  display: block;
+}
+
+/* Style the links inside the submenu */
+.nav__submenu-item a {
+  color: #fff;
+}
+
+/* Hover effect on submenu anchor tags */
+.nav__submenu-item:hover > a {
+  border: 2px solid transparent; /* Transparent border on hover */
+  padding: 2.5px;
+  border-radius: 5px;
+}
+
+/* Add a subtle transition effect */
+.nav__menu-item a, .nav__submenu-item a {
+  transition: border-color 1s ease-in;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav__menu {
+    flex-direction: row; /* Keep items horizontal */
+    align-items: center; /* Center items */
+    gap: 5px; /* Reduce gap for smaller screens */
+  }
+
+  .nav__menu-item {
+    padding: 8px; /* Reduce padding for smaller screens */
+    font-size: 0.5rem; /* Further reduce font size for smaller screens */
+  }
+
+  .nav__submenu {
+    position: absolute; /* Submenu appears below the item */
+    display: none;
+    background: #444; /* Slightly lighter background for submenu */
+    border-radius: 10px; /* Keep border radius */
+  }
+
+  .nav__menu-item:hover .nav__submenu {
+    display: block; /* Show submenu on hover */
+  }
+}
+
+/* Home Section */
+.home-section {
+  height: 150vh;
+  background: url('./photos/Rozzis\ -\ Picture\ gallery\ 5.jpg') no-repeat center center/cover;
+  display: flex;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Menu Sections */
+.menu-section {
+  padding: 60px 0;
+}
+
+
+
+/* About Us Section */
+.about-section {
+  padding: 60px 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    border-radius: 10px; /* Keep border radius */
+  background: #0e0d0d; /* Light background */
+  text-align: center;
+  color: #e96601;
+   font-size: 3rem;
+  font-weight: bold;
+  color: #888; /* اللون الأساسي للنص */
+  text-shadow: 1px 1px 6px #888, /* ظل أبيض خفيف لجعل الحواف مشرقة */
+               -2px -5px 5px #888, /* ظل داخلي أبيض للأعلى */
+               -9px -8px -5px #888; /* ظل داخلي رمادي للأسفل */
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Us Section */
+.contact-section {
+  padding: 60px 0;
+  background: #3d2323; /* White background */
+    border-radius: 10px; /* Keep border radius */
+    
+  text-align: center;
+  color: #888;
+  justify-content: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #000000; /* Dark text */
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ffe600; /* Green on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+
+
+
+/* author: https://codepen.io/krautgti/pen/VwXNRYE
+KrautGTI
+ */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap");
+ * {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+ }
+ 
+ :root {
+   --main-bg: #ff0000;
+   --box-bg: #0a0a0a;
+   --name-color: #ffffff;
+   --card-bg-text: #ff0000;
+ }
+ 
+ 
+ 
+ .container {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 1200px;
+   transform-style: preserve-3d;
+ }
+ 
+ .container .box {
+   position: relative;
+   width: 300px;
+   height: 400px;
+   margin: 40px;
+   background: var(--box-bg);
+   border-radius: 20px;
+   transform-style: preserve-3d;
+ }
+ 
+ .container .box::before {
+   content: "sasa";
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-size: 6em;
+   font-weight: 900;
+   color: var(--card-bg-text);
+   font-style: italic;
+   opacity: 0;
+   transition: 0.5s;
+   color: #7c0505;
+ }
+ 
+ .container .box::after {
+   content: "cafe";
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   font-size: 4.5em;
+   font-weight: 900;
+   color: var(--card-bg-text);
+   font-style: italic;
+   opacity: 0;
+   transition: 0.5s;
+ }
+ 
+ .container .box:hover::after,
+ .container .box:hover::before {
+   opacity: 0.04;
+ }
+ 
+ .container .box .name {
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   color: var(--name-color);
+   width: 100%;
+   transform-style: preserve-3d;
+   transform: translate3d(0, 0, 75px);
+   transition: 0.5s;
+   opacity: 0;
+   z-index: 10;
+ }
+ 
+ .container .box:hover .name {
+   top: 40px;
+   opacity: 1;
+ }
+ 
+ .container .box .buy {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform-style: preserve-3d;
+   transform: translate3d(0, 0, 75px);
+   color: #fff;
+   background: #333;
+   padding: 10px 25px;
+   border-radius: 30px;
+   text-decoration: none;
+   transition: 0.5s;
+   opacity: 0;
+   z-index: 10;
+ }
+ 
+ .container .box:hover .buy {
+   bottom: 30px;
+   opacity: 1;
+ }
+ 
+ .container .box .circle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   transition: 0.5s;
+   background: #ffffff;
+   transform-style: preserve-3d;
+   z-index: 10;
+   opacity: 1;
+   transform: translate3d(-50%, -50%, 0px);
+ }
+ 
+ .container .box:hover .circle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   transition: 0.5s;
+   background: #ffffff;
+   transform-style: preserve-3d;
+   z-index: 10;
+   opacity: 1;
+   transform: translate3d(-50%, -50%, 35px);
+ }
+ 
+ .container .box .product {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   max-width: 300px;
+   transition: 0.5s;
+   z-index: 11;
+   transition: 0.5s;
+   transform-style: preserve-3d;
+   transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
+ }
+ 
+ .container .box:hover .product {
+   transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+ }
+ 
+ .container .box:nth-child(1) .circle,
+ .container .box:nth-child(1) .buy {
+   background: #d0ff00;
+ }
+ 
+ .container .box:nth-child(2) .circle,
+ .container .box:nth-child(2) .buy {
+   background: #1DA3C3;
+ }
+ 
+ .container .box:nth-child(3) .circle,
+ .container .box:nth-child(3) .buy {
+   background: #eb0e2f;
+ }
+ 
+ .mode-switch {
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   color: var(--name-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .mode-switch.active .moon {
+   fill: var(--name-color);
+ }
+ 
+ /* ================================================= */
+ /* Responsive Media Queries (Added Below) */
+ /* ================================================= */
+ 
+ /* For Tablets and Smaller Laptops */
+ @media (max-width: 1024px) {
+   .container {
+     width: 100%; /* Full width for smaller screens */
+     padding: 0 20px; /* Add padding for better spacing */
+   }
+ 
+   .container .box {
+     width: 45%; /* Two boxes per row */
+     margin: 20px; /* Reduce margin for better spacing */
+   }
+ 
+   .container .box::before {
+     font-size: 4em; /* Reduce font size for smaller screens */
+   }
+ 
+   .container .box::after {
+     font-size: 3em; /* Reduce font size for smaller screens */
+   }
+ 
+   .container .box .circle {
+     width: 150px; /* Reduce circle size */
+     height: 150px; /* Reduce circle size */
+   }
+ 
+   .container .box .product {
+     max-width: 80%; /* Adjust product image size */
+   }
+ }
+ 
+ /* For Mobile Devices */
+ @media (max-width: 768px) {
+   .container .box {
+     width: 100%; /* One box per row */
+     margin: 10px 0; /* Reduce margin for better spacing */
+   }
+ 
+   .container .box::before {
+     font-size: 3em; /* Further reduce font size */
+   }
+ 
+   .container .box::after {
+     font-size: 2em; /* Further reduce font size */
+   }
+ 
+   .container .box .circle {
+     width: 120px; /* Further reduce circle size */
+     height: 120px; /* Further reduce circle size */
+   }
+ 
+   .container .box .product {
+     max-width: 70%; /* Further adjust product image size */
+   }
+ }
+ 
+ /* For Very Small Mobile Devices */
+ @media (max-width: 480px) {
+   .container .box::before {
+     font-size: 2.5em; /* Further reduce font size */
+   }
+ 
+   .container .box::after {
+     font-size: 1.5em; /* Further reduce font size */
+   }
+ 
+   .container .box .circle {
+     width: 100px; /* Further reduce circle size */
+     height: 100px; /* Further reduce circle size */
+   }
+ 
+   .container .box .product {
+     max-width: 60%; /* Further adjust product image size */
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
